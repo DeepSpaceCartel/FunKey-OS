@@ -19,7 +19,7 @@ endef
 define COMMANDER_CREATE_OPK
 	$(INSTALL) -d -m 0755 $(TARGET_DIR)/usr/local/share/OPKs/Applications
 	cd $(@D); \
-	$(HOST_DIR)/usr/bin/mksquashfs \
+	$(HOST_DIR)/bin/mksquashfs \
 		opkg/default.funkey-s.desktop \
 		opkg/readme.funkey-s.txt \
 		opkg/commander.png \
